@@ -82,7 +82,7 @@ echo "locked/agent.jms.remote.port="$SERVER_PORT_JMS >> ~/tmp/ucda-install/ucd-a
 echo "locked/agent.jms.remote.host="$SERVER_ADDR >> ~/tmp/ucda-install/ucd-agent-install/agent.install.properties
 echo "agentcomm.server.uri=wss://"$SERVER_ADDR":"$SERVER_PORT_WSS >> ~/tmp/ucda-install/ucd-agent-install/agent.install.properties
 
-more ~/tmp/ucda-install/ucd-agent-install/agent.install.properties
+cat ~/tmp/ucda-install/ucd-agent-install/agent.install.properties
 
 
 echo "-----------------------------------------------------------------------------------------------------------------"

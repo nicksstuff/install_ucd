@@ -127,8 +127,7 @@ else
 fi
 
 
-
-more ~/tmp/ucds-install/ibm-ucd-install/install.properties
+cat ~/tmp/ucds-install/ibm-ucd-install/install.properties
 
 
 echo "-----------------------------------------------------------------------------------------------------------------"
