@@ -75,6 +75,7 @@ sed -i '/install.server.dir/d' ~/tmp/ucds-install/ibm-ucd-install/install.proper
 sed -i '/server.initial.password/d' ~/tmp/ucds-install/ibm-ucd-install/install.properties
 sed -i '/install.server.web.host/d' ~/tmp/ucds-install/ibm-ucd-install/install.properties
 sed -i '/install.server.web.https.port/d' ~/tmp/ucds-install/ibm-ucd-install/install.properties
+sed -i '/install.server.web.http.port/d' ~/tmp/ucds-install/ibm-ucd-install/install.properties
 sed -i '/install.server.web.ip/d' ~/tmp/ucds-install/ibm-ucd-install/install.properties
 sed -i '/install.server.web.port/d' ~/tmp/ucds-install/ibm-ucd-install/install.properties
 
@@ -126,13 +127,8 @@ else
 fi
 
 
-if [ $SERVER_PORT_WSS ]; then
- echo "agent.comm.uri=wss://"$SERVER_ADDR":"$SERVER_PORT_HTTPS >> ~/tmp/ucds-install/ibm-ucd-install/install.properties
-else
- echo "agent.comm.uri=wss://ucd-server:7919" >> ~/tmp/ucds-install/ibm-ucd-install/install.properties
-fi
 
-
+more ~/tmp/ucds-install/ibm-ucd-install/install.properties
 
 
 echo "-----------------------------------------------------------------------------------------------------------------"
