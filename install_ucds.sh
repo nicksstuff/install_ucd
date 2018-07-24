@@ -6,7 +6,7 @@ export SERVER_PORT_UI_HTTP="8888"
 export SERVER_PORT_JMS="7918"
 export SERVER_PORT_WSS="7919"
 export SERVER_PASSWORD="admin"
-export SERVER_PATH=/opt/ibm-ucd/servertest
+export SERVER_PATH=/opt/ibm-ucd/server
 
 echo "-----------------------------------------------------------------------------"
 echo "-----------------------------------------------------------------------------"
